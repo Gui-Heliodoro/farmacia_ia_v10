@@ -1,14 +1,14 @@
 // src/main.tsx
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';  // ← importa
+import { HashRouter } from 'react-router-dom';
 import App from './App.tsx';
 import './index.css';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter basename="/farmacia_ia_v10">  {/* ← define o basename */}
-      <App />
-    </BrowserRouter>
+    <HashRouter>
+  <App />
+</HashRouter>
   </StrictMode>
 );
